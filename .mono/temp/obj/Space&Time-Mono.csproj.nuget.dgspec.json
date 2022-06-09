@@ -1,0 +1,53 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\Godot Projects\\Space&Time-Mono\\Space&Time-Mono.csproj": {}
+  },
+  "projects": {
+    "F:\\Godot Projects\\Space&Time-Mono\\Space&Time-Mono.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Godot Projects\\Space&Time-Mono\\Space&Time-Mono.csproj",
+        "projectName": "Space&Time-Mono",
+        "projectPath": "F:\\Godot Projects\\Space&Time-Mono\\Space&Time-Mono.csproj",
+        "packagesPath": "C:\\Users\\jonfi\\.nuget\\packages\\",
+        "outputPath": "F:\\Godot Projects\\Space&Time-Mono\\.mono\\temp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jonfi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.2, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

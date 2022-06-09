@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Assests/KennyNL/PNG/Lasers/laserRed01.png" type="Texture" id=1]
+[ext_resource path="res://Assests/KennyNL/PNG/Lasers/laserGreen02.png" type="Texture" id=2]
+[ext_resource path="res://Assests/KennyNL/PNG/Lasers/laserBlue01.png" type="Texture" id=3]
+[ext_resource path="res://Scripts/Projectile/Projectile.cs" type="Script" id=4]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 5.0
+height = 46.0
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "Laser2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "Laser0",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "Laser1",
+"speed": 5.0
+} ]
+
+[node name="Projectile" type="KinematicBody2D"]
+scale = Vector2( 0.5, 0.5 )
+collision_layer = 2
+collision_mask = 2
+script = ExtResource( 4 )
+Speed = 250.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 2 )
+animation = "Laser2"

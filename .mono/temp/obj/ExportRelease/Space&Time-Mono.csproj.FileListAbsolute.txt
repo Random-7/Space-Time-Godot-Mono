@@ -1,0 +1,9 @@
+F:\Godot Projects\Space&Time-Mono\.mono\temp\bin\ExportRelease\Space&Time-Mono.dll
+F:\Godot Projects\Space&Time-Mono\.mono\temp\bin\ExportRelease\Space&Time-Mono.pdb
+F:\Godot Projects\Space&Time-Mono\.mono\temp\obj\ExportRelease\Space&Time-Mono.csproj.AssemblyReference.cache
+F:\Godot Projects\Space&Time-Mono\.mono\temp\obj\ExportRelease\Space&Time-Mono.GeneratedMSBuildEditorConfig.editorconfig
+F:\Godot Projects\Space&Time-Mono\.mono\temp\obj\ExportRelease\Space&Time-Mono.AssemblyInfoInputs.cache
+F:\Godot Projects\Space&Time-Mono\.mono\temp\obj\ExportRelease\Space&Time-Mono.AssemblyInfo.cs
+F:\Godot Projects\Space&Time-Mono\.mono\temp\obj\ExportRelease\Space&Time-Mono.csproj.CoreCompileInputs.cache
+F:\Godot Projects\Space&Time-Mono\.mono\temp\obj\ExportRelease\Space&Time-Mono.dll
+F:\Godot Projects\Space&Time-Mono\.mono\temp\obj\ExportRelease\Space&Time-Mono.pdb

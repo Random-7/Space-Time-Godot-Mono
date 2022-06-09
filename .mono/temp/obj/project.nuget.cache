@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "2d6g+D4fARSZPO4NYCB9bAKyJBz2t7CtcIQNNxwSBsEVQcSwbv89EgBBWwXfwbhyQJSJmtFEB+6bAe4esrS2Gw==",
+  "success": true,
+  "projectFilePath": "F:\\Godot Projects\\Space&Time-Mono\\Space&Time-Mono.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jonfi\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.2\\microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",
+    "C:\\Users\\jonfi\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net472\\1.0.2\\microsoft.netframework.referenceassemblies.net472.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
