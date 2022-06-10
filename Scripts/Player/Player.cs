@@ -48,6 +48,12 @@ public class Player : KinematicBody2D
 
 	private void Fire()
 	{
-		projectileHandler.SpawnProjectile(GlobalPosition,Vector2.Up,"Laser2", false);
+		var projectileSpawn = (Node2D)GetNodeOrNull("ProjectileSpawn");
+		if (projectileSpawn != null)
+		{
+			projectileHandler.SpawnProjectile(projectileSpawn.GlobalPosition,Vector2.Up,"Laser2", false);
+		} else {
+			GD.Print("No Fire Point found");
+		}
 	}
 }

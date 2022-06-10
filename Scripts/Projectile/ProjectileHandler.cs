@@ -9,7 +9,13 @@ public class ProjectileHandler : Node
 
 	public override void _Ready()
 	{
-		_projectileRoot = GetNode("/root/Main/Projectiles/");
+		_projectileRoot = GetNodeOrNull("/root/Main/Projectiles/");
+		if(_projectileRoot != null)
+		{
+			//TODO Create projectile root node if not there
+			//TODO Create Logger class and functions
+			GD.Print("Got Projectile Root Node");
+		}
 	}
 
 	public void SpawnProjectile(Vector2 spawnPos, Vector2 direction, string animation, bool isEnemy)
