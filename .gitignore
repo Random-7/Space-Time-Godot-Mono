@@ -366,3 +366,4 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 *.lnk
+.mono/*
