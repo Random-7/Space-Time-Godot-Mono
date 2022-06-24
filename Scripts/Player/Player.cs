@@ -7,9 +7,7 @@ public class Player : KinematicBody2D
 	public float Speed = 100;
 	[Export]
 	public float fireRateDelay = 0.3f;
-	
 	private Vector2 Velocity = new Vector2(0,0);
-	
 	private float lastFireTime = 0.0f;
 	private ProjectileHandler projectileHandler;
 	
