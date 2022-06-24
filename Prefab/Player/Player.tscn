@@ -18,6 +18,11 @@ animations = [ {
 "name": "Green",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "Green 2",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 4 ) ],
 "loop": true,
 "name": "Blue",
@@ -26,11 +31,6 @@ animations = [ {
 "frames": [ ExtResource( 7 ) ],
 "loop": true,
 "name": "Orange 2",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 6 ) ],
-"loop": true,
-"name": "Green 2",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 1 ) ],
