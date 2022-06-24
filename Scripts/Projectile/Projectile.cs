@@ -5,8 +5,6 @@ public class Projectile : KinematicBody2D
 {
 	[Export]
 	public float Speed = 50;
-	
-
 	private Vector2 direction = Vector2.Up;
 	private bool isEnemy;
 

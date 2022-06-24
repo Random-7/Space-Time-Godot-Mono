@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Assests/KennyNL/PNG/Meteors/meteorBrown_big1.png" type="Texture" id=1]
+[ext_resource path="res://Assests/KennyNL/PNG/Meteors/meteorBrown_big3.png" type="Texture" id=2]
+[ext_resource path="res://Assests/KennyNL/PNG/Meteors/meteorBrown_big4.png" type="Texture" id=3]
+[ext_resource path="res://Assests/KennyNL/PNG/Meteors/meteorBrown_big2.png" type="Texture" id=4]
+[ext_resource path="res://Scripts/Environment/Meteor.cs" type="Script" id=5]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "Meteor2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "Meteor3",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "Meteor4",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "Meteor1",
+"speed": 5.0
+} ]
+
+[node name="MeteorBrownBig" type="KinematicBody2D"]
+collision_layer = 3
+collision_mask = 3
+script = ExtResource( 5 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 2 )
+animation = "Meteor4"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 16, -47, 48, -12, 31, 41, -19, 48, -48, 10, -34, -33 )

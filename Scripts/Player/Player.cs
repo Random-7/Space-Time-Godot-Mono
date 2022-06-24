@@ -35,6 +35,8 @@ public class Player : KinematicBody2D
 	
 		MoveAndCollide(Velocity);
 
+		LookAt(GetGlobalMousePosition());
+
 		if(Input.IsActionPressed("fire_1"))
 		{
 			if(lastFireTime > fireRateDelay)
@@ -51,7 +53,8 @@ public class Player : KinematicBody2D
 		var projectileSpawn = (Node2D)GetNodeOrNull("ProjectileSpawn");
 		if (projectileSpawn != null)
 		{
-			projectileHandler.SpawnProjectile(projectileSpawn.GlobalPosition,Vector2.Up,"Laser2", false);
+			var aimspot = GetGlobalMousePosition();
+			projectileHandler.SpawnProjectile(projectileSpawn.GlobalPosition, projectileSpawn.GlobalPosition - aimspot.Normalized(),"Laser2", false);
 		} else {
 			GD.Print("No Fire Point found");
 		}
