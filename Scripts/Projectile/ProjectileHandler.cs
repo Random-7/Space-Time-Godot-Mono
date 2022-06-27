@@ -18,12 +18,21 @@ public class ProjectileHandler : Node
 		}
 	}
 
-	public void SpawnProjectile(Vector2 spawnPos, Vector2 direction, string animation, bool isEnemy)
+	public void SpawnProjectile(Vector2 spawnPos, Vector2 direction, float rotation, string animation, bool isEnemy)
 	{
 		var projectile = (Projectile)_Projectile.Instance();
 		_projectileRoot.AddChild(projectile);
 		projectile.GlobalPosition = spawnPos;
-		projectile.SetDirection(direction);
-		projectile.SetEnemy(isEnemy);
+		projectile.SetEnemy(isEnemy);	
+		projectile.SetDirectionAndRotation(direction.Normalized(), rotation );
+
+		if(!isEnemy)
+		{
+			projectile.CollisionMask = 2; // Collide with Enemy
+		} else {
+			projectile.CollisionMask = 1; // Collide with Player
+		}
+
+		// Set is fired here
 	}
 }

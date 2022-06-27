@@ -61,7 +61,7 @@ public class Player : KinematicBody2D
 		if (projectileSpawn != null)
 		{
 			var aimspot = GetGlobalMousePosition();
-			projectileHandler.SpawnProjectile(projectileSpawn.GlobalPosition, projectileSpawn.GlobalPosition - aimspot.Normalized(),"Laser2", false);
+			projectileHandler.SpawnProjectile(projectileSpawn.GlobalPosition, projectileSpawn.GlobalPosition.DirectionTo(aimspot), this.RotationDegrees - 90, "Laser2", false);
 		} else {
 			GD.Print("No Fire Point found");
 		}

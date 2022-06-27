@@ -7,6 +7,7 @@ public class Projectile : KinematicBody2D
 	public float Speed = 50;
 	private Vector2 direction = Vector2.Up;
 	private bool isEnemy;
+	private bool isFired;
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
@@ -21,12 +22,16 @@ public class Projectile : KinematicBody2D
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(float delta)
 	{
-		MoveAndCollide(direction * Speed * delta);
+		if (isFired)
+			MoveAndCollide(direction * Speed * delta);
+			
 	}
 
-	public void SetDirection(Vector2 newDirection)
+	public void SetDirectionAndRotation(Vector2 newDirection, float rotation)
 	{
 		direction = newDirection;
+		RotationDegrees = rotation;
+		isFired = true;
 	}
 	public void SetEnemy(bool isAnEnemy)
 	{
