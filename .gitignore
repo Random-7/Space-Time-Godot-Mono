@@ -367,3 +367,5 @@ $RECYCLE.BIN/
 *.msp
 *.lnk
 .mono/*
+.mono/temp/obj/Debug/Space&Time-Mono.csproj.FileListAbsolute.txt
+.mono/temp/obj/Debug/Space&Time-Mono.GeneratedMSBuildEditorConfig.editorconfig
