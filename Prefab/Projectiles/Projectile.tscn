@@ -16,18 +16,18 @@ animations = [ {
 "name": "Laser1",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 3 ) ],
-"loop": true,
-"name": "Laser0",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 1 ) ],
 "loop": true,
 "name": "Laser2",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "Laser0",
+"speed": 5.0
 } ]
 
-[node name="Projectile" type="KinematicBody2D"]
+[node name="Projectile" type="Area2D"]
 scale = Vector2( 0.25, 0.25 )
 collision_layer = 4
 collision_mask = 0
@@ -35,9 +35,12 @@ script = ExtResource( 4 )
 Speed = 200.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 shape = SubResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 rotation = 3.14159
 frames = SubResource( 2 )
 animation = "Laser2"
+
+[connection signal="body_entered" from="." to="." method="_on_Projectile_body_entered"]

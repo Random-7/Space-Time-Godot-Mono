@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public class Projectile : KinematicBody2D
+public class Projectile : Area2D
 {
 	[Export]
 	public float Speed = 50;
@@ -23,8 +23,15 @@ public class Projectile : KinematicBody2D
 	public override void _Process(float delta)
 	{
 		if (isFired)
-			MoveAndCollide(direction * Speed * delta);
+			GlobalTranslate(direction * Speed * delta);
 			
+	}
+
+	void _on_Projectile_body_entered(PhysicsBody2D body)
+	{
+		GD.Print("Hit Object: " + body.Name);
+		//TODO Calculate hit, deal damage, destory etc.
+		QueueFree();
 	}
 
 	public void SetDirectionAndRotation(Vector2 newDirection, float rotation)
