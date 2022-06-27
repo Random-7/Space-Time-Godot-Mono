@@ -1,6 +1,5 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://Prefab/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Prefab/Projectiles/ProjectileHandler.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scripts/Enemy/EnemyHandler.cs" type="Script" id=4]
 [ext_resource path="res://Prefab/Enemy/Enemy1.tscn" type="PackedScene" id=5]
@@ -28,8 +27,3 @@ EnemyPrefabs = [ ExtResource( 5 ), ExtResource( 7 ) ]
 [node name="EnvironmentHandler" type="Node" parent="Environment"]
 script = ExtResource( 8 )
 _Meteor = [ ExtResource( 9 ), ExtResource( 10 ) ]
-
-[node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 650, 680 )
-scale = Vector2( 0.5, 0.5 )
-fireRateDelay = 0.25
